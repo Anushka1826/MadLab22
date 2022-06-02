@@ -1,10 +1,19 @@
-import java.io.*; 
-class first
-{
-    public static void main(String args[])throws IOException
-    {
-        InputStreamReader ir= new InputStreamReader(System.in);
-        BufferedReader br= new BufferedReader(ir);
-        System.out.println("Hello World");
+class Animal {
+    void eat() {
+        System.out.println("eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("barking...");
+    }
+}
+
+class first {
+    public static void main(String args[]) {
+        Dog d = new Dog();
+        d.bark();
+        d.eat();
     }
 }

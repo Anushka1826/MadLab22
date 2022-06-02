@@ -1,12 +1,16 @@
-import java.util.Scanner;
+class Mother {
+    void run() {
+        System.out.println("hello");
+    }
+}
 
-public class third {
+class third extends Mother {
+    void run() {
+        System.out.println("JUET");
+    }
+
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int num = sc.nextInt();
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(num + " * " + i + " = " + num * i);
-        }
+        Mother b = new third();
+        b.run();
     }
 }
